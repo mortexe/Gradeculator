@@ -1,0 +1,39 @@
+body {
+  font-family: Open Sans, sans-serif !important;
+}
+
+.col-xs-3{
+   padding: 5px ;
+}
+
+.col-xs-6{
+  padding: 5px;
+}
+
+.col-xs-3 .form-control{
+  width: 65%;
+}
+
+.col-xs-6 .form-control{
+  width: 65%;
+}
+
+.btn-groups{
+
+}
+
+#calc{
+  width: 15%;
+  height: 13%;
+}
+
+.glyphicon{
+  font-size: 30px;
+}
+
+header:after {
+    content:' ';
+    display:block;
+    border:1px solid #d0d0d0;
+    border-radius:1px;
+}

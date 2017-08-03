@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grade calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/input-addon.js"> </script>
+    <script type="text/javascript" src="js/calculation.js"></script>
+
+
+    <header>
+      <h1>Average Grade Calculator</h1>
+      <p> Easy method to calculate your module or assessment average</p>
+    </header>
+
+<div class="container">
+  <div class="row-input-head">
+    <div class="col-xs-3">
+      <h3>Mark</h3>
+    </div>
+    <div class="col-xs-3">
+      <h3>Percentage</h3>
+    </div>
+    <div class="col-xs-6">
+      <h3>Reference <small>(optional)</small></h3>
+    </div>
+  </div>
+<form id="data" method="post" action="#">
+  <div class="row-inputs">
+    <div class="col-xs-3">
+      <input type="text" class="form-control mark" name="mark" placeholder="0 - 100">
+    </div>
+    <div class="col-xs-3">
+      <input type="text" class="form-control pc" name="pc" placeholder="%">
+    </div>
+    <div class="col-xs-6">
+      <input type="text" class="form-control tag" name="ref" placeholder="">
+    </div>
+  </div>
+</form>
+
+<div class="btn-groups" role="group">
+  <a role="button" id="add" class="btn btn-lg btn-default" >
+  Add another
+  </a>
+  <a role="button" id="calc" class="btn btn-lg btn-success">Calculate</a>
+</div>
+</div>
+
+  </body>
+</html>
