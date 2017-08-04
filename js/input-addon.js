@@ -27,7 +27,7 @@ $('body').on('click', '#calc', function(){
   });
   var markLength= markMap.length;
   var percLenght = percMap.length;
-  
+
   if (markLength != percLenght){
     console.log('please enter percentage')
     markMap=[];
@@ -36,20 +36,22 @@ $('body').on('click', '#calc', function(){
   else{
     var i=1;
     var mark;
-    var mark1 = ((percMap[0]/100)*markMap[0]);
+    var firstMark = ((percMap[0]/100)*markMap[0]);
     while(i<markLength){
       if (i==1){
-        mark = mark1 + ((percMap[i]/100)*markMap[i]);
+        marks = firstMark + ((percMap[i]/100)*markMap[i]); // calculate first and second marks only once
       }
       else{
-        mark = mark + ((percMap[i]/100)*markMap[i]);
+        marks = marks + ((percMap[i]/100)*markMap[i]); // continue calculations until loop is done
       }
       i++
-      }
-      console.log(mark,'total')
-      markMap=[];
-      percMap=[];
     }
+      console.log(marks,'total')
+      markMap=[]; // empty mark array
+      percMap=[]; // empty percentage array
+
+      document.getElementById('res').innerHTML = marks; //show result on HTML
+  }
 });
 
 

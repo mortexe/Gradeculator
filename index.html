@@ -13,13 +13,15 @@
     <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/input-addon.js"> </script>
-    <script type="text/javascript" src="js/calculation.js"></script>
-
 
     <header>
       <h1>Average Grade Calculator</h1>
       <p> Easy method to calculate your module or assessment average</p>
     </header>
+
+    <div class="result">
+      <p>Your average mark is: <span id="res"></span></p>
+    </div>
 
 <div class="container">
   <div class="row-input-head">
@@ -49,7 +51,7 @@
 
 <div class="btn-groups" role="group">
   <a role="button" id="add" class="btn btn-lg btn-default" >
-  Add another
+  <b>+</b> Add another
   </a>
   <a role="button" id="calc" class="btn btn-lg btn-success">Calculate</a>
 </div>
