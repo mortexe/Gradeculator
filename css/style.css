@@ -37,3 +37,10 @@ header:after {
     border:1px solid #d0d0d0;
     border-radius:1px;
 }
+
+.result {
+  top:25px;
+  border-radius: 1px;
+  border: 1px solid #d0d0d0;
+  max-width: 250px;
+}
