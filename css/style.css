@@ -2,6 +2,10 @@ body {
   font-family: Open Sans, sans-serif !important;
 }
 
+.container{
+  margin: auto;
+}
+
 .col-xs-3{
    padding: 5px ;
 }
@@ -12,23 +16,31 @@ body {
 
 .col-xs-3 .form-control{
   width: 65%;
+  height: 55%;
 }
 
 .col-xs-6 .form-control{
   width: 65%;
+  height: 55%;
 }
 
 .btn-groups{
-
+  padding: 1%;
 }
 
-#calc{
-  width: 15%;
-  height: 13%;
+.btn-groups a{
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 35px;
+  font-size: 21px;
+  padding: 10px;
+  margin: auto;
 }
 
-.glyphicon{
-  font-size: 30px;
+.btn-lg{
+  width: 350px;
+  height: 65px;
 }
 
 header:after {
@@ -39,8 +51,77 @@ header:after {
 }
 
 .result {
+  margin: auto;
+  text-align: center;
   top:25px;
-  border-radius: 1px;
-  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  border: 4px solid #0000b3;
   max-width: 250px;
+}
+
+.error:after{
+  content:' ';
+  display:block;
+  border:2.5px solid red;
+  border-radius: 1px;
+}
+
+.error::before{
+  content:' ';
+  display:block;
+  border:2.5px solid red;
+  border-radius: 1px;
+}
+
+@media screen and (max-width:959px){
+  .container{
+    margin: auto;
+  }
+
+  .col-xs-3{
+     padding: 5px ;
+  }
+
+  .col-xs-6{
+    padding: 5px;
+  }
+
+  .col-xs-3 .form-control{
+    width: 100%;
+    height: 25%;
+  }
+
+  .col-xs-6 .form-control{
+    width: 80%;
+    height: 25%;
+  }
+
+  .btn-groups{
+    margin-top: 5%;
+  }
+
+  .btn-groups a{
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    font-size: 21px;
+    padding: 10px;
+    margin: 3px;
+  }
+
+  .btn-lg{
+    width: 87%;
+    height: 15%;
+  }
+
+  .result {
+    margin: auto;
+    text-align: center;
+    top:25px;
+    border-radius: 4px;
+    border: 4px solid #0000b3;
+    max-width: 40%;
+  }
+
 }

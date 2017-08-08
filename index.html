@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Grade calculator</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -19,8 +19,13 @@
       <p> Easy method to calculate your module or assessment average</p>
     </header>
 
+    <div class="error">
+      <h1> Made a mistake? </h1>
+      <p> Your total percentage is greater than 100</p>
+    </div>
+
     <div class="result">
-      <p>Your average mark is: <span id="res"></span></p>
+      <p>Your average mark is : <span id="res"></span>/<span id='resPerc'></span></p>
     </div>
 
 <div class="container">
@@ -51,8 +56,7 @@
 
 <div class="btn-groups" role="group">
   <a role="button" id="add" class="btn btn-lg btn-default" >
-  <b>+</b> Add another
-  </a>
+  <b>+</b> Add another</a>
   <a role="button" id="calc" class="btn btn-lg btn-success">Calculate</a>
 </div>
 </div>

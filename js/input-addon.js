@@ -3,6 +3,7 @@ var percMap=[];
 
 $( document ).ready(function() {
   $('.result').addClass('hidden');
+  $('.error').addClass('hidden');
   let i = 0;
   while(i<3){
     $('.row-inputs').clone().appendTo('#data');
@@ -38,14 +39,16 @@ $('body').on('click', '#calc', function(){
     var i=1;
     var mark;
     var firstMark = ((percMap[0]/100)*markMap[0]);
+    var firstPerc= percMap[0]/100;
 
     if(percLenght && markLength==1){
       console.log(firstMark,'total')
+      console.log(firstPerc,'perc')
       markMap=[]; // empty mark array
       percMap=[]; // empty percentage array
 
       document.getElementById('res').innerHTML = firstMark; //show result on HTML
-
+      document.getElementById('resPerc').innerHTML = firstPerc;
     }
     else{
     while(i<markLength){
@@ -66,6 +69,7 @@ $('body').on('click', '#calc', function(){
       if($('.result').hasClass('hidden')){
         $('.result').removeClass('hidden').addClass('visible');
       }
+
   }
 });
 
