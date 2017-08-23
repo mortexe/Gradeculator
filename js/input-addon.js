@@ -11,10 +11,15 @@ $( document ).ready(function() {
   }
 });
 
+$(function(){
+  var totalMark = 0;
+  var totalPerc = 0;
+  
 $('body').on('click', '#calc', function(){
   $('.form-control.mark').each(function(){
     var mark= $(this).val();
     if(mark>0){
+      totalMark += mark;
       console.log(mark);
       markMap.push(mark);
     }
@@ -23,10 +28,13 @@ $('body').on('click', '#calc', function(){
     $('.form-control.pc').each(function(){
       var perc=$(this).val();
       if(perc>0){
+        totalPerc += perc;
         console.log(perc);
         percMap.push(perc);
       }
   });
+
+  console.log(totalPerc,'perc');
   var markLength= markMap.length;
   var percLenght = percMap.length;
 
@@ -48,7 +56,6 @@ $('body').on('click', '#calc', function(){
       percMap=[]; // empty percentage array
 
       document.getElementById('res').innerHTML = firstMark; //show result on HTML
-      document.getElementById('resPerc').innerHTML = firstPerc;
     }
     else{
     while(i<markLength){
@@ -56,7 +63,7 @@ $('body').on('click', '#calc', function(){
         marks = firstMark + ((percMap[i]/100)*markMap[i]); // calculate first and second marks only once
       }
       else{
-        marks = marks + ((percMap[i]/100)*markMap[i]); // continue calculations until loop is done
+        marks = marks + ((percMap[i]/100)*markMap[i]) // continue calculations until loop is done
       }
       i++
     }
@@ -69,8 +76,8 @@ $('body').on('click', '#calc', function(){
       if($('.result').hasClass('hidden')){
         $('.result').removeClass('hidden').addClass('visible');
       }
-
   }
+});
 });
 
 $('body').on('click','#add', function (){
