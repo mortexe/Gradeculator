@@ -5,8 +5,8 @@ $( document ).ready(function() {
   $('.result').addClass('hidden');
   $('.error').addClass('hidden');
   let i = 0;
-  while(i<3){
-    $('.row-inputs').clone().appendTo('#data');
+  while(i<5){
+    $('#data').append('<div class="col-xs-3"><input type="text" class="form-control mark" name="mark" placeholder="0 - 100"></div><div class="col-xs-3"><input type="text" class="form-control pc" name="pc" placeholder="%"></div><div class="col-xs-6"><input type="text" class="form-control tag" name="ref" placeholder=""></div></div>');
     i+=1;
   }
 });
@@ -14,7 +14,7 @@ $( document ).ready(function() {
 $(function(){
   var totalMark = 0;
   var totalPerc = 0;
-  
+
 $('body').on('click', '#calc', function(){
   $('.form-control.mark').each(function(){
     var mark= $(this).val();
