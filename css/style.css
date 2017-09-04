@@ -163,6 +163,7 @@ footer{
 
 footer small{
   margin-right: 4%;
+  color: grey;
 }
 
 a{
@@ -273,6 +274,7 @@ i{
   footer{
     margin-left: 2em;
   }
+
   footer small{
     margin-right: 4em;
   }
