@@ -93,7 +93,9 @@ $('body').on('click', '#calc', function(){
         console.log(marks,'total')
         markMap=[]; // empty mark array
         percMap=[]; // empty percentage array
-
+        totalMark=0;
+        totalPerc=0;
+        numInputs=0;
         document.getElementById('res').innerHTML = marks; //show result on HTML
 
         if($('.result').hasClass('hidden')){
