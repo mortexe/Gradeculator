@@ -31,11 +31,12 @@ span{
 }
 
 .page-container{
-  margin-left: 10em;
+  margin-left: 13em;
 }
 
 .container{
   width: 1100px;
+  margin-top: 3em;
 }
 
 .container::after{
@@ -204,11 +205,12 @@ tbody tr{
 }
 
 footer{
+  margin-right: 10em;
   text-align: center;
 }
 
 footer small{
-  margin-right: 4%;
+  margin-right: 6%;
   color: grey;
 }
 
@@ -234,7 +236,9 @@ i{
 }
 
 .follow-me{
+  text-align: center;
   margin-bottom: 2px;
+  margin-right: 1em;
 }
 
 .ion-chevron-down{
@@ -266,7 +270,7 @@ i{
   content:' ';
   display:block;
   border-top: 1px solid rgb(211,211,211);
-  width: 95%;
+  width: 100%;
 }
 
 .ion-social-github.top{
@@ -284,7 +288,6 @@ i{
   font-size: 3em;
 }
 
-
 .ion-social-github:hover{
   color:grey;
 }
@@ -297,7 +300,7 @@ i{
   color:#007bb6;
 }
 
-@media screen and (max-width:1050px){
+@media screen and (max-width:1100px){
   .page-container{
     margin-left: 0;
   }
