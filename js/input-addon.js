@@ -29,7 +29,6 @@ $(function(){
     $('body').keypress(function() {
       if (event.which == 13) {
       callback();
-
     }
 
   });
