@@ -4,6 +4,7 @@ var percMap=[];
 $( document ).ready(function() {
   $('.result').addClass('hidden');
   $('.error').addClass('hidden');
+  $('.equal-inputs').addClass('hidden');
 
   let i = 0;
   while(i<5){
@@ -19,6 +20,10 @@ $(function(){
   var numInputs = 0;
 
 $('body').on('click', '#calc', function(){
+  $('.result').addClass('hidden');
+  $('.error').addClass('hidden');
+  $('.equal-inputs').addClass('hidden');
+
   $('.form-control.mark').each(function(){
     var mark= $(this).val();
     if(mark>0){
@@ -43,7 +48,7 @@ $('body').on('click', '#calc', function(){
   var percLenght = percMap.length;
 
   if (markLength != percLenght){ //error when inputs are not equal
-    alert('Marks and Percentages should be the same amount')
+    $('.equal-inputs').removeClass('hidden').addClass('visible');
     markMap=[];
     percMap=[];
     return false;
@@ -60,6 +65,15 @@ $('body').on('click', '#calc', function(){
         if($('.result').hasClass('hidden')){
           $('.result').removeClass('hidden').addClass('visible');
         }
+      }
+      else if(!(numInputs*100 == totalPerc) && totalPerc>100){
+        markMap=[];
+        percMap=[];
+        totalPerc=0;
+        totalMark=0;
+        numInputs=0;
+        $('.error').removeClass('hidden').addClass('visible');
+        return false;
       }
 
     else{
