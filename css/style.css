@@ -304,6 +304,18 @@ i{
   .page-container{
     margin-left: 0;
   }
+    .result{
+      width: 80%;
+      margin: 0;
+    }
+    .error{
+      width: 80%;
+      margin: 0;
+    }
+    .equal-inputs{
+      width: 80%;
+      margin: 0;
+    }
 }
 
 @media screen and (max-width:900px){
@@ -330,8 +342,8 @@ i{
 
   .result{
     width: 100%;
-    margin: 0;
     margin-top: 2em;
+    margin-left: 0;
   }
 
   .col-xs-3{
@@ -413,6 +425,10 @@ i{
       margin: 0;
     }
 
+    .result{
+      width: 100%;
+    }
+
     .para-left{
       width: 98%;
     }
@@ -438,6 +454,10 @@ i{
     .social-top svg{
       height: 12px;
       width: 12px;
+    }
+
+    footer{
+      margin:0;
     }
   }
 
