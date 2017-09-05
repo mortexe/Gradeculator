@@ -205,12 +205,12 @@ tbody tr{
 }
 
 footer{
-  margin-right: 10em;
   text-align: center;
+  position: relative;
 }
 
 footer small{
-  margin-right: 6%;
+  margin-right: 4em;
   color: grey;
 }
 
@@ -305,16 +305,16 @@ i{
     margin-left: 0;
   }
     .result{
-      width: 80%;
-      margin: 0;
+      width: 60%;
+      margin-left: 10em;
     }
     .error{
-      width: 80%;
-      margin: 0;
+      width: 60%;
+      margin-left: 10em;
     }
     .equal-inputs{
-      width: 80%;
-      margin: 0;
+      width: 60%;
+      margin-left: 10em;
     }
 }
 
@@ -405,7 +405,7 @@ i{
   }
 
   footer{
-    margin-left: 2em;
+    margin-left: 5em;
   }
 
   footer small{
@@ -457,8 +457,8 @@ i{
     }
 
     footer{
-      margin:0;
-    }
+      margin-right: 0;
+      margin-left:4em;
   }
 
   @media screen and (max-width:319px){
