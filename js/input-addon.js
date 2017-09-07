@@ -71,6 +71,9 @@ $(function(){
       $('.equal-inputs').removeClass('hidden').addClass('visible');
       markMap=[];
       percMap=[];
+      totalPerc=0;
+      totalMark=0;
+      numInputs=0;
       return false;
     }
       if(numInputs*100 == totalPerc){
