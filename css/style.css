@@ -464,6 +464,12 @@ i{
       margin-left:4em;
   }
 
+  footer small a{
+    text-decoration: underline;
+    font-size: 22px;
+    color: lightblue;
+  }
+
   @media screen and (max-width:319px){
     body{
       width: 319px;
