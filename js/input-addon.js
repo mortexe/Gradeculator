@@ -47,6 +47,7 @@ $(function(){
 
     $('.form-control.mark').each(function(){
       var mark= $(this).val();
+
       if(mark>0){
         totalMark += parseInt(mark);
         markMap.push(mark);
@@ -130,4 +131,8 @@ $(function(){
 
 $('body').on('click','#add', function (){
   $('#data').append('<div class="col-xs-3"><input type="text" class="form-control mark" name="mark" placeholder="0 - 100"></div><div class="col-xs-3"><input type="text" class="form-control pc" name="pc" placeholder="%"></div><div class="col-xs-6"><input type="text" class="form-control tag" name="ref" placeholder=""></div></div>');
+});
+
+$('body').on('click','#reset', function(){
+  document.getElementById('data').reset();
 });
